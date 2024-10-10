@@ -1,1 +1,20 @@
-t
+0.установить docker на ОС apt install docker.io
+1.Запустить docker angie, будет произведено скачивание необходимых пакетов и последующий запуск
+docker run --name angie -v /var/www/html:/usr/share/angie/html:ro \
+ -p 8800:80 -d docker.angie.software/angie:latest
+
+2.cd /opt/
+   mkdir docker/angie
+   mkdir docker
+
+3.Скопировать с запушенного докер образа папку на ОС docker cp angie:/etc/angie /opt/docker/angie
+
+4. Запустить докер с папками из ОС docker run --name angie3 -v /var/www/html:/usr/share/angie/html:ro -v /etc/angie:/opt/docker/angie:ro -p 443:80 -d docker.angie.software/angie:latest
+
+где
+
+Запустить докер docker run
+Название докера --name angie  
+какую папку использовать вместо виртуальной -v/var/www/html:/usr/share/angie/html:ro
+Через какой порт пробрасывать в докер (PAT) -p 8800:80
+Какую службу запустить в докер -d docker.angie.software/angie:latest
