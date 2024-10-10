@@ -16,4 +16,3 @@ echo "deb https://download.angie.software/angie-pro/$(. /etc/os-release && echo 
 9.Установка дополнительных пакетов sudo apt-get install angie-pro-console-light
 9.1 sudo apt-get install angie-pro-module-auth-jwt
 9.2 sudo apt-get install angie-pro-module-auth-ldap
-
