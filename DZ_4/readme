@@ -1,1 +1,32 @@
 запуск wordpress
+sudo su
+
+Процесс установки пакетов
+apt install mysql-server-8.0
+sudo apt install php-fpm php-curl php-mysqli php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
+
+Зайти в mysql и создать пароль для root учетной записи и учетную запись
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '1';
+CREATE USER 'wordpress'@'%' IDENTIFIED WITH mysql_native_password BY '1';
+grant all on wordpress.* to 'wordpress'@'%';
+
+
+скачать сайт wordpress
+cd /tmp
+curl -LO https://wordpress.org/latest.tar.gz
+cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php
+cp -a /tmp/wordpress/. /var/www/wordpress
+chown -R www-data:www-data /var/www/wordpress
+cd /var/www/wordpress/
+nano wp-config.php
+
+
+создать базу данных wordpress
+mysql localhost 1
+mysql -h localhost -u wordpress -p wordpress
+
+
+Добавить конфигурационный файл angie , где установлен wordpress ( т.к. у меня выполнено перенаправление, добавить Proxy_pass на основном angie-pro для доступа к wordpress)
+
+
