@@ -1,0 +1,291 @@
+user@ubuntu22-server:/$ sudo su
+[sudo] password for user:
+root@ubuntu22-server:/# history 100
+   88  ls
+   89  systemctl restart angie
+   90  systemctl status angie
+   91  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+   92  nano /etc/angie/
+   93  cd /etc/angie/
+   94  ll
+   95  mkdir ssl
+   96  cd ssl
+   97  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/angie/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+   98  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/angie/ssl/nginx-selfsigned.key -out /etc/angie/ssl/nginx-selfsigned.crt
+   99  ll
+  100  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  101  systemctl restart angie
+  102  systemctl status angie
+  103  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  104  systemctl restart angie
+  105  systemctl status angie
+  106  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  107  systemctl restart angie
+  108  systemctl status angie
+  109  ll
+  110  chmod 777 nginx-selfsigned.crt
+  111  chmod 777 nginx-selfsigned.key
+  112  angie -t
+  113  cat nginx-selfsigned.key
+  114  ll
+  115  ls
+  116  cat nginx-selfsigned.crt
+  117  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  118  angie -t
+  119  angie -s reload
+  120  ss -tulpan
+  121  systemctl stop nginx
+  122  systemctl disable nginx
+  123  angie -s reload
+  124  ll
+  125  reboot
+  126  mysql
+  127  mysql localhost 1
+  128  nano /var/www/wordpress/wp-config.php
+  129  mysql -h localhost -u wordpress -p wordpress
+  130  mysql
+  131  mysql -u root
+  132  mysql -u root -p
+  133  angie -t && angie -s reload
+  134  ss -tulpan
+  135  nano /etc/angie/http.d/default.conf
+  136  angie -t && angie -s reload
+  137  nano /etc/angie/http.d/default.conf
+  138  angie -t && angie -s reload
+  139  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  140  angie -t && angie -s reload
+  141  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  142  chmod 777 /etc/angie/ssl/
+  143  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  144  angie -t && angie -s reload
+  145  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  146  angie -t && angie -s reload
+  147  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  148  angie -t && angie -s reload
+  149  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  150  cat /var/www/wordpress/index.php
+  151  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  152  nano /etc/angie/http.d/wordpress-224190-f2258a.conf ss -tulpan
+  153  ss -tulpan
+  154  sudo nano /etc/angie/angie.conf
+  155  rm /etc/angie/http.d/wordpress-224190-f2258a.confy
+  156  angie -t && angie -s reload
+  157  ping 192.168.100.2
+  158  ip ro
+  159  sudo nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  160  curl https:127.0.0.1
+  161  curl https://127.0.0.1
+  162  curl https://127.0.0.1:443
+  163  curl http://127.0.0.1
+  164  curl -iL http://127.0.0.1
+  165  tail /var/log/angie/access.log
+  166  sudo nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  167  angie -t && angie -s reload
+  168  sudo nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  169  start x
+  170  startx
+  171  ip a
+  172  systemctl status selinux
+  173  n
+  174  systemctl status iptab
+  175  ip ro
+  176  ping 192.168.100.1
+  177  ping 192.168.100.2
+  178  systemctl status angie
+  179  ss -tulpan
+  180  angie -s restart
+  181  systemctl restart angie
+  182  nano /etc/angie/angie.conf
+  183  systemctl restart angie
+  184  mysql
+  185  sudo mysql
+  186  sudo su
+  187  history 100
+root@ubuntu22-server:/# history 1000
+    1  cd
+    2  nano /etc/ssh/sshd_config
+    3  passwd root
+    4  service sshd restart
+    5  poweroff
+    6  ls
+    7  poweroff
+    8  netplan generate
+    9  nano /etc/netplan/00-installer-config.yaml
+   10  netplan generate
+   11  nano /etc/netplan/00-installer-config.yaml
+   12  netplan generate
+   13  nano /etc/netplan/00-installer-config.yaml
+   14  netplan generate
+   15  nano /etc/netplan/00-installer-config.yaml
+   16  netplan generate
+   17  nano /etc/netplan/00-installer-config.yaml
+   18  netplan generate
+   19  nano /etc/netplan/00-installer-config.yaml
+   20  y
+   21  netplan generate
+   22  nano /etc/netplan/00-installer-config.yaml -c
+   23  netplan generate
+   24  nano /etc/netplan/00-installer-config.yaml -c
+   25  netplan generate
+   26  ip a
+   27  ip ro
+   28  ip a
+   29  reboot
+   30  tar xzvf latest.tar.gz
+   31  l
+   32  ll
+   33  tar xzvf latest.tar.gz
+   34  apt-get update tar
+   35  apt-get install  update tar
+   36  apt-get install tar
+   37  ll
+   38  ls
+   39  cd latest.tar.gz
+   40  ll
+   41  tar -xzvf latest.tar.gz
+   42  ll
+   43  tar -xzvf latest.tar.gz ll
+   44  ll
+   45  cd latest.tar.gz
+   46  ll
+   47  tar -xzvf latest.tar.gz /opt/world
+   48  curl -L0 https://worldpress.org/latest.tar.gz
+   49  curl -Lo https://worldpress.org/latest.tar.gz
+   50  curl -L0 https://worldpress.org/latest.tar.gz
+   51  curl -LO https://wordpress.org/latest.tar.gz
+   52  ll
+   53  tar zxvf latest.tar.gz
+   54  cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php
+   55  cp -a /tmp/wordpress/. /var/www/wordpress
+   56  mkdir /var/www/wordpress
+   57  mkdir /var/www
+   58  mkdir /var/www/wordpress
+   59  cp -a /tmp/wordpress/. /var/www/wordpress
+   60  sudo chown -R www-data:www-data /var/www/wordpress
+   61  cd /var/www/wordpress/
+   62  nano wp-config.php
+   63  apt-get install nginx
+   64  cd ..
+   65  ls
+   66  cd ..
+   67  cd /etc/nginx/
+   68  ll
+   69  apt-get install nginx remove
+   70  apt-get remove nginx
+   71  apt-get install angie
+   72  sudo apt-get install -y ca-certificates curl
+   73  sudo curl -o /etc/apt/trusted.gpg.d/angie-signing.gpg             https://angie.software/keys/angie-signing.gpg
+   74  echo "deb https://download.angie.software/angie/$(. /etc/os-release && echo "$ID/$VERSION_ID $VERSION_CODENAME") main"     | sudo tee /etc/apt/sources.list.d/angie.list > /dev/null
+   75  sudo apt-get update
+   76  sudo apt-get install -y angie
+   77  ls
+   78  cd ..
+   79  ls
+   80  cd angie/
+   81  ls
+   82  ll
+   83  cd http.d/
+   84  chmod /etc/angie/http.d/
+   85  chmod /etc/angie/http.d
+   86  chmod 777 /etc/angie/http.d/
+   87  nano /var/www/wordpress/wp-config.php
+   88  ls
+   89  systemctl restart angie
+   90  systemctl status angie
+   91  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+   92  nano /etc/angie/
+   93  cd /etc/angie/
+   94  ll
+   95  mkdir ssl
+   96  cd ssl
+   97  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/angie/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+   98  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/angie/ssl/nginx-selfsigned.key -out /etc/angie/ssl/nginx-selfsigned.crt
+   99  ll
+  100  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  101  systemctl restart angie
+  102  systemctl status angie
+  103  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  104  systemctl restart angie
+  105  systemctl status angie
+  106  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  107  systemctl restart angie
+  108  systemctl status angie
+  109  ll
+  110  chmod 777 nginx-selfsigned.crt
+  111  chmod 777 nginx-selfsigned.key
+  112  angie -t
+  113  cat nginx-selfsigned.key
+  114  ll
+  115  ls
+  116  cat nginx-selfsigned.crt
+  117  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  118  angie -t
+  119  angie -s reload
+  120  ss -tulpan
+  121  systemctl stop nginx
+  122  systemctl disable nginx
+  123  angie -s reload
+  124  ll
+  125  reboot
+  126  mysql
+  127  mysql localhost 1
+  128  nano /var/www/wordpress/wp-config.php
+  129  mysql -h localhost -u wordpress -p wordpress
+  130  mysql
+  131  mysql -u root
+  132  mysql -u root -p
+  133  angie -t && angie -s reload
+  134  ss -tulpan
+  135  nano /etc/angie/http.d/default.conf
+  136  angie -t && angie -s reload
+  137  nano /etc/angie/http.d/default.conf
+  138  angie -t && angie -s reload
+  139  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  140  angie -t && angie -s reload
+  141  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  142  chmod 777 /etc/angie/ssl/
+  143  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  144  angie -t && angie -s reload
+  145  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  146  angie -t && angie -s reload
+  147  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  148  angie -t && angie -s reload
+  149  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  150  cat /var/www/wordpress/index.php
+  151  nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  152  nano /etc/angie/http.d/wordpress-224190-f2258a.conf ss -tulpan
+  153  ss -tulpan
+  154  sudo nano /etc/angie/angie.conf
+  155  rm /etc/angie/http.d/wordpress-224190-f2258a.confy
+  156  angie -t && angie -s reload
+  157  ping 192.168.100.2
+  158  ip ro
+  159  sudo nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  160  curl https:127.0.0.1
+  161  curl https://127.0.0.1
+  162  curl https://127.0.0.1:443
+  163  curl http://127.0.0.1
+  164  curl -iL http://127.0.0.1
+  165  tail /var/log/angie/access.log
+  166  sudo nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  167  angie -t && angie -s reload
+  168  sudo nano /etc/angie/http.d/wordpress-224190-f2258a.conf
+  169  start x
+  170  startx
+  171  ip a
+  172  systemctl status selinux
+  173  n
+  174  systemctl status iptab
+  175  ip ro
+  176  ping 192.168.100.1
+  177  ping 192.168.100.2
+  178  systemctl status angie
+  179  ss -tulpan
+  180  angie -s restart
+  181  systemctl restart angie
+  182  nano /etc/angie/angie.conf
+  183  systemctl restart angie
+  184  mysql
+  185  sudo mysql
+  186  sudo su
+  187  history 100
