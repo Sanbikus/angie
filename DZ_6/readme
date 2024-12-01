@@ -1,0 +1,45 @@
+создаем локальный сертификат
+openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out MyCertificate.crt -keyout MyKey.key
+
+далее прикрипляем его к директиве server
+ssl_certificate /etc/angie/ssl/MyCertificate.crt;
+ssl_certificate_key /etc/angie/ssl/MyKey.key;
+
+
+Добавляем терминацию SSL на прослушивании порта
+listen 0.0.0.0:443 ssl;
+
+Общие настройки для SSL
+
+ssl_session_cache shared:SSL:10m;
+ssl_session_timeout 28h;
+ssl_session_tickets on;
+ssl_protocols TLSv1.2 TLSv1.3;
+
+ssl_ciphers ALL:!aNULL:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;
+
+
+
+включение http2
+в директиве server
+http2 on;
+
+
+включение http3
+добавляется дополнительный listen
+listen 443 quic reuseport;
+в location добавляется 
+add_header Alt-Svc 'h3=":8443"; ma=86400';
+
+
+
+включение HSTS
+в location добавляется add_header Strict-Transport-Security max-age=31536000; 
+
+
+
+
+
+
+
+
